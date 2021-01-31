@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="Jonas Striaukas, PhD candidate in Economics, UCLouvain.">
+    <title>Jonas Striaukas</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124181850-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-124181850-1');
+    </script>    
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="row loader">
+        <div class="loader-icon"></div>
+      </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg border-none bg-light-gray desktop-hide">
+      <div class="container sm-padding-10px-tb sm-padding-15px-lr">
+        <a class="logo" href="javascript:void(0);" data-scroll-nav="0">
+          <img src="img/logo-dark.png" alt="Julius Vainora" title="Julius Vainora">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse desktop-hide" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="javascript:void(0);" data-scroll-nav="0">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" target="_blank">Curriculum Vitae</a>
+            </li>	    	    
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="1">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="2">Teaching</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="sidemenu_btn sm-display-none" id="sidebar_toggle">
+        <span></span> <span></span> <span></span>
+      </a>
+    </nav>
+
+    <div class="side-menu side-menu-active left-panel">
+      <div class="inner-wrapper">
+        <div class="profile-pic">
+          <img src="img/profile-pic.png" class="rounded-circle" />
+        </div>
+	<h6 class="width-100", align="center">Jonas Striaukas</h6>
+	<div class="separator-line-horrizontal-full bg-extra-light-gray margin-15px-bottom"></div>
+        <nav class="side-nav width-100", align="center">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="javascript:void(0);" data-scroll-nav="0">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CV_PDF.pdf" target="_blank">Curriculum Vitae</a>
+            </li>	    
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="1">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="2">Teaching</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="separator-line-horrizontal-full bg-extra-light-gray margin-15px-bottom"></div>
+        <div class="side-footer width-100">
+	  <div class="social-links margin-30px-bottom xs-margin-20px-bottom margin-10px-top", align="center">
+            <a href="https://github.com/jstriaukas", target="_blank"><i class="fab fa-2x fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jonasstriaukas/", target="_blank"><i class="fab fa-2x fa-linkedin-in"></i></a>
+	    <a href="https://stats.stackexchange.com/users/260883/jonas-striaukas", target="_blank"><i class="fab fa-2x fa-stack-overflow"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-wrapper">
+      <div class="bg-light-gray sm-padding-75px-top" data-scroll-index="0">
+        <div class="container">
+          <div class="row">
+	    <div class="col-2"></div>
+            <div class="col-9 xs-padding-50px-tb">
+              <div class="padding-twenty-top padding-30px-bottom sm-padding-fifteen-top xs-no-padding">
+                <p class="width-100 md-width-100 xs-width-100 font-size16 xs-font-size14">
+		  I received my PhD from the Universidad Carlos III de Madrid in 2020.</br></br>
+		  In September 2020 I will join the University of Cambridge as an assistant professor.
+		</p>
+	      </div>
+	    </div>
+	    <div class="col-1"></div>
+	  </div>
+
+
+
+	  <div class="row">
+            <div class="col-6 col-sm-6 col-md-4 xs-padding-5px-tb border-bottom border-top d-flex justify-content-center">
+              <div class="padding-ten-bottom xs-no-padding">
+                <p class="font-size16 xs-font-size11">
+		  <ul class="fa-ul">
+		    <li><b>Research Fields</b></li>		    
+		    <li><i class="fa-li fa fa-square fa-spin"></i>Econometrics</li>
+		    <li><i class="fa-li fa fa-square fa-spin"></i>Machine Learning</li>
+		    <li><i class="fa-li fa fa-square fa-spin"></i>Network Econometrics</li>		    
+		  </ul>
+		</p>
+              </div>
+            </div>
+	    <div class="col-6 col-sm-6 col-md-4 xs-padding-5px-tb  border-bottom border-top d-flex justify-content-center">
+              <div class="padding-ten-bottom xs-no-padding">
+                <p class="font-size16 xs-font-size11">
+		  <ul class="fa-ul">
+		    <li><b>References</b></li>		    		    
+		    <li><i class="fa-li fa fa-square fa-spin"></i><a href="mailto:delgado@est-econ.uc3m.es ">Miguel A. Delgado</a> (Advisor)</li>
+		    <li><i class="fa-li fa fa-square fa-spin"></i><a href="mailto:jescanci@eco.uc3m.es">Juan Carlos Escanciano</a></li>
+		    <li><i class="fa-li fa fa-square fa-spin"></i><a href="mailto:gabor.lugosi@gmail.com">Gábor Lugosi</a></li>			    
+		    <li><i class="fa-li fa fa-square fa-spin"></i><a href="mailto:carlos.velasco@uc3m.es">Carlos Velasco</a></li>		    
+		  </ul>
+		</p>
+              </div>
+            </div>
+	    <div class="col-xs-12 col-md-4 xs-padding-5px-tb border-bottom border-top d-flex justify-content-center">
+              <div class="padding-ten-bottom xs-no-padding">
+                <p class="font-size16 xs-font-size11">
+		  <ul class="fa-ul">
+		    <li><b>Contact</b></li>		    		    
+		    <li><i class="fa-li fa fa-square fa-spin"></i><a href="mailto:julius.vainora@uc3m.es">julius.vainora@uc3m.es</a></li>
+		    <li><i class="fa-li fa fa-square fa-spin"></i>+34 644 223 642</li>
+		  </ul>
+		</p>
+              </div>
+            </div>
+	  </div>
+        </div>
+      </div>
+      
+      <section data-scroll-index="1">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 center-col margin-70px-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
+              <h2 class="font-size34 md-font-size30 sm-font-size26 xs-font-size24 font-weight-700 section-title">Research</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 sm-margin-30px-bottom">
+	      <h6 align="center">Job Market Paper</h6>
+	      <p><a name="JMP"></a><b>Network Dependence and Inference</b></p>
+              <p class="padding-five-bottom">This paper considers the problem of making valid inferences with network data. In general, data is dependent when the underlying entities form a network; however, the exact nature of the relationship between network topology and data dependence is not clear. Accounting for dependence between network entity attributes is instrumental for valid inferences, but this has received little formal treatment and tends to be neglected in practice. The main contribution of this paper is to provide a formal framework for handling the dependence of network data, giving rise to new ways of making inferences. The proposed estimators can be easily implemented in practice and require a single network observation. Laws of large numbers, consistency of autocovariance function estimators, and a central limit theorem are proven. A number of theoretical and empirical applications of the provided framework are presented.</p>
+	      <h6 align="center">Working Papers</h6>
+	      <p><a name="Pearson"></a><b>A Pearson Statistic for Conditional Distribution Model Checking</b> (with Miguel A. Delgado)</p>
+	      <p class="padding-five-bottom">We propose an asymptotically pivotal Pearson statistic for specification testing of parametric conditional distributions. Data is grouped into a contingency table according to partitions exploiting the fact that the conditional integral transform of the dependent variable is independent of the explanatory variables. We can reproduce classical results for marginal distributions related to Pearson test using this type of partition, for example, a Chernoff-Lehmann result and the asymptotic equivalence to the likelihood ratio test and some computationally relevant alternatives. In particular, the tests are still valid when sample-dependent partitions are used, and we provide an algorithm to construct partitions with asymptotically equiprobable classes. Also, a normal approximation is valid when the number of classes in the partition is large, which is relevant when data is sparse, with some empty cells. We study the power of the test under contiguous alternatives converging to the null at the rate of \(n^{-1/2}\) or \(n^{-1/4}\), when the number of cells is fixed or diverges with the sample size respectively. The finite sample performance of the test is examined by means of a Monte Carlo experiment, where we compare Pearson test with existing omnibus alternatives.</p>
+	      <h6 align="center">Work in Progress</h6>
+	      <p><a name="Graphons"></a><b>Nonparametric Estimation of Low-Rank Graphons</b> (with László Györfi and Gábor Lugosi)</p>
+	      <p><a name="Counterfactuals"></a><b>Network Dependence Counterfactuals and Their Estimation Using Machine Learning</b></p>
+	      <p>This paper introduces a new concept of network dependence counterfactuals. While counterfactual measures of outcome variables are well-understood, counterfactual dependence between outcome variables has not been considered. In this paper we exploit the network stationarity assumption allowing to estimate, given a single network observation, the counterfactual covariance between outcome variables of any two network entities under a given hypothetical network structure. We further propose a more flexible estimation procedure using machine learning algorithms. As an application, we suggest a series of vertex and edge influence and network robustness measures and illustrate them on microfinance data from Indian villages.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="services bg-light-gray" data-scroll-index="2">
+        <div class="container padding-fifteen-bottom">
+          <div class="row">
+            <div class="col-12 center-col margin-70px-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
+              <h3 class="font-weight-700 font-size32 md-font-size27 sm-font-size24 xs-font-size20 section-title">Teaching</h3>
+            </div>
+          </div>
+          <div class="row align-items-center">
+	    <div class="col-3 text-right">
+	      <p class="xs-font-size11"><span class="teaching_season">Fall </span> 2017–2019</p>
+	    </div>
+	    <div class="col-9 border-left border-color-medium-gray">
+	      <p><b>Preliminary Statistics</b> (Ph.D. program, Instructor)</p>
+	    </div>
+          </div>
+
+	  <div class="row align-items-center">
+	    <div class="col-3 text-right">
+	      <p class="xs-font-size11"><span class="teaching_season">Spring </span>2017–2019</p>
+	    </div>
+	    <div class="col-9 border-left border-color-medium-gray">
+	      <p><b>Econometrics II</b> (Ph.D. program, TA, Profs. Miguel A. Delgado and Carlos Velasco)</p>
+	    </div>
+	  </div>
+	  <div class="row align-items-center">
+	    <div class="col-3 text-right">
+	      <p class="xs-font-size11"><span class="teaching_season">Spring </span>2017–2020</p>
+	    </div>
+	    <div class="col-9 border-left border-color-medium-gray">
+	      <p><b>Quantitative Macroeconomics</b> (Undergraduate program, Course support, Prof. Álvaro Escribano)</p>
+	    </div>
+	  </div>
+	  <div class="row align-items-center">
+	    <div class="col-3 text-right">
+	      <p class="xs-font-size11"><span class="teaching_season">Spring </span>2017</p>
+	    </div>
+	    <div class="col-9 border-left border-color-medium-gray">
+	      <p><b>Applied Time Series Econometrics with R</b> (Online course review, Prof. Miguel A. Arranz)</p>
+	    </div>
+	  </div>
+	  <div class="row align-items-center">
+	    <div class="col-3 text-right">
+	      <p class="xs-font-size11"><span class="teaching_season">Fall </span>2015–2016</p>
+	    </div>
+	    <div class="col-9 border-left border-color-medium-gray">
+	      <p><b>Game Theory</b> (Master program, TA, Prof. Francisco Marhuenda)</p>
+	    </div>
+	  </div>
+	  <div class="row align-items-center">
+	    <div class="col-3 text-right">
+	      <p class="xs-font-size11"><span class="teaching_season">Spring </span>2016</p>
+	    </div>
+	    <div class="col-9 border-left border-color-medium-gray">
+	      <p><b>Econometrics</b> (Undergraduate program, TA, Prof. Gabriel Smagghue)</p>
+	    </div>
+	  </div>	  
+        </div>
+      </section>
+
+      
+      <footer class="bg-black">
+        <div id="back-to-top" class="back-to-top reveal">
+          <i class="fa fa-angle-up"></i>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/animated.headline.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.count.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/side-panel.js"></script>
+  </body>
+</html>
