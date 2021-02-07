@@ -88,9 +88,12 @@ Table of contents
   align-items: center; }
 
 a:hover, a:active {
-  color: red;
+  color: #232323;
   text-decoration: none; }
 
+h4 a:hover span {
+    color: red !important; 
+}
 
 .btn {
   display: inline-block;
