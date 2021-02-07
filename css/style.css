@@ -28,6 +28,13 @@ Table of contents
     16. Responsive
     
 ---------------------------------- */
+
+@media screen and (max-width: 767px) {
+    .teaching_season {
+        display: none !important;
+    }
+}
+
 /*============================== 
     Basic
 ================================*/
@@ -93,8 +100,8 @@ a:hover, a:active {
 
 .btn {
   display: inline-block;
-  font-size: 14px;
-  padding: 9px 22px;
+  font-size: 12px;
+  padding: 3px 10px;
   background: #fff;
   border: 2px solid #fff;
   border-radius: 25px;
