@@ -151,7 +151,8 @@ h4 {
 
 a:hover, a:active {
   color: #232323;
-  text-decoration: none; }
+  text-decoration: none; 
+}
 
 .btn {
   display: inline-block;
