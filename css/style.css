@@ -36,7 +36,7 @@ Table of contents
 }
 
 
-.button {
+.button1 {
   border: none;
   color: white;
   padding: 15px 32px;
@@ -46,9 +46,10 @@ Table of contents
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  background-color: #4CAF50;
 }
 
-.button1 {background-color: #4CAF50;} 
+
 /*============================== 
     Basic
 ================================*/
