@@ -50,6 +50,10 @@ Table of contents
   background-color: #FFFFFF;
 }
 
+.button1:hover {
+  text-decoration: underline;
+  color: #232323;
+}
 
 /*============================== 
     Basic
