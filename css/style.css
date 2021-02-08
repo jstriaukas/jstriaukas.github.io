@@ -56,8 +56,27 @@ Table of contents
   color: #232323;
 }
 
+.hyperlink1 {
+  border: none;
+  color: #2C2CB0;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px 0px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+}
 
 .hyperlink:hover {
+  text-decoration: underline;
+  /*font-weight: bold;*/
+  color: #232323;
+}
+
+.hyperlink1:hover {
   text-decoration: underline;
   /*font-weight: bold;*/
   color: #232323;
