@@ -52,6 +52,7 @@ Table of contents
 
 .button1:hover {
   text-decoration: underline;
+  font-weight: bold;
   color: #232323;
 }
 
