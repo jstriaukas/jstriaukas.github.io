@@ -43,6 +43,11 @@ $mobile-screen: 575px;
     Basic
 ================================*/
 
+*{
+  margin:0;
+  padding:0;
+}
+
 /* loader */
 #preloader {
   position: fixed;
