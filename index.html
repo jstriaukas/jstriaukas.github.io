@@ -20,6 +20,43 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+   section.Publications {
+    padding-top: 20px;
+    
+}
+
+section.Publications div#accordion {
+    max-width: 700px;
+    margin: auto;
+}
+     section.Publications div#accordion span.font-size24 {
+    width: 100%;
+    text-align: center !important;
+    display: block;
+}   
+
+@media screen and (max-width: 990px) {
+    .navbar-collapse.desktop-hide.collapse.show {
+    position: inherit !important;
+    height: inherit !important;
+    overflow: inherit !important;
+    transition: inherit !important;
+}
+
+   .collapse:not(.show) {
+    display: inherit !important;
+}
+
+body.sidebar-menu {
+    padding: 0;
+}
+
+.bg-light-gray.sm-padding-50px-top {
+    padding-top: 100px !important;
+}
+}
+    </style>
   </head>
   <body>
     <div id="preloader">
@@ -31,9 +68,13 @@
     <nav class="navbar navbar-expand-lg border-none bg-light-gray desktop-hide">
       <div class="container sm-padding-10px-tb sm-padding-15px-lr">
         <a class="logo" href="javascript:void(0);" data-scroll-nav="0">
-          <img src="img/logo-dark.png" alt="Jonas Striaukas" title="Jonas Striaukas">
+        <h6 style="
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+">Jonas Striaukas</h6>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-label="Toggle navigation">
           <span class="icon-bar"><i class="fas fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse desktop-hide" id="navbarContent">
@@ -42,7 +83,7 @@
               <a class="nav-link active" href="javascript:void(0);" data-scroll-nav="0">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="" target="_blank">Curriculum Vitae</a>
+              <a class="nav-link" href="http://jstriaukas.github.io/files/cv.pdf" target="_blank">Curriculum Vitae</a>
             </li>	    	    
             <li class="nav-item">
               <a class="nav-link" href="javascript:void(0);" data-scroll-nav="1">Research</a>
@@ -150,7 +191,7 @@
       </div>
       </div>  
 
-      <section data-scroll-index="1">
+      <section class="Publications" data-scroll-index="1">
         <div class="container">
           <!---
           <div class="row">
@@ -164,7 +205,7 @@
 		  
 			<!--- Publications -->
 		    <!--<h7 class="width-100">Publications</h7>-->
-	        <p class="padding-five-bottom">
+	   
 	        <div class="" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
             <div class="" role="tab" id="headingOne">
