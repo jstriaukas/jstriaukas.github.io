@@ -1,0 +1,244 @@
+\documentclass[10pt]{article}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=1cm]{geometry}
+\setlength\parindent{0pt}
+\usepackage{xcolor}
+\usepackage[numbers]{natbib}
+\definecolor{darkblue}{rgb}{0, 0.0392, 0.8039}
+\definecolor{skypeblue}{rgb}{0, 0.6862, 0.9411}
+\usepackage[colorlinks=true,linkcolor=darkblue,urlcolor=darkblue,citecolor=darkblue,anchorcolor=darkblue]{hyperref}
+\usepackage{fontawesome}
+\usepackage{titlesec}
+\usepackage{makecell}
+\renewcommand{\cellalign}{l}
+
+\titleformat{\section}
+{\normalfont\scshape}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\scshape}{\thesubsection}{1em}{}
+
+\usepackage{datetime}
+\newdateformat{monthyeardate}{%
+	\monthname[\THEMONTH], \THEYEAR}
+
+\newcommand\blfootnote[1]{%
+	\begingroup
+	\renewcommand\thefootnote{}\footnote{#1}%
+	\addtocounter{footnote}{-1}%
+	\endgroup
+}
+
+\usepackage{tikz}
+\tikzset{
+	linkpic/.pic={
+		\draw[line width=0.15mm, blue] (0,0) -- (0.2,0);
+		\draw[line width=0.15mm, blue]  (0.2,0) -- (0.2,0.12);
+		\draw[line width=0.15mm, blue]  (0.12,0.2) -- (0,0.2);
+		\draw[line width=0.15mm, blue]  (0,0.2) -- (0,0);
+		\filldraw[blue] (0,0) circle (0.03pt);  %left-south corner
+		\filldraw[blue] (0.2,0) circle (0.03pt); %right-south corner
+		\filldraw[blue] (0,0.2) circle (0.03pt); %left-south corner
+		\filldraw[blue] (0.12,0.2) circle (0.03pt); %right-north to right corner
+		\filldraw[blue] (0.2,0.12) circle (0.03pt); %right-north to north corner
+		\draw[line width=0.15mm,blue] (0.1,0.1) -- (0.25,0.25); %arrow from center
+		\draw[line width=0.15mm,blue] (0.25,0.14) -- (0.25,0.25); %arrow to south
+		\draw[line width=0.15mm,blue] (0.12,0.25) -- (0.25,0.25); %arrow from left
+		\filldraw[blue] (0.25,0.25) circle (0.03pt); %arrow-end
+}}
+
+\newcommand{\thestar}{{\Large{\color{blue}$\star$} }}
+\newcommand{\thecircle}{{\Large{\color{blue}$\circ$} }}
+\newcommand{\thestarnogap}{{\Large{\color{blue}$\star$}}}
+\newcommand{\thecirclenogap}{{\Large{\color{blue}$\circ$}}}
+\newcommand{\thestarup}{{\LARGE{\color{blue}$^\star$}}}
+
+
+
+%\usepackage{authblk}
+\title{\vspace{-2.0cm}\textsc{Jonas Striaukas}\\\small{\monthyeardate\today}}
+\author{}
+\date{}
+%midasML:  \href{https://www.midasml.com/}{https://www.midasml.com}\ \tikz \pic{linkpic};
+
+\begin{document}
+	\maketitle
+	\vspace{-5.5em}
+	\begin{table}[!ht]
+		\begin{tabular}{l p{1cm} l}
+			& &Phone: +32 (0) 10479429 {\color{skypeblue}\faSkype} striaukas\\
+			Louvain Finance research center& &Email: \href{mailto:jonas.striaukas@gmail.com}
+			{jonas.striaukas@gmail.com}/\href{mailto:striaukas@gmail.com}
+			{striaukas@gmail.com}\\
+			Universit\'e catholique de Louvain & &Web: \href{https://jstriaukas.github.io/}{https://jstriaukas.github.io/}\ \tikz \pic{linkpic}; \\
+			34 Voie du Roman Pays, Belgium & &arXiv: \href{https://arxiv.org/search/econ?searchtype=author\&query=Striaukas\%2C+J}{https://arxiv.org} \tikz \pic{linkpic}; ; Cross Validated: \href{https://stats.stackexchange.com/users/260883/jonas-striaukas}{link}\ \tikz \pic{linkpic};\\\hline
+			%cross-validated: \href{https://stats.stackexchange.com/users/260883/jonas-striaukas}{jonas-striaukas}\ \tikz \pic{linkpic};\\\hline
+		\end{tabular}
+	\end{table}
+	
+	\vspace{-2em}
+	\section*{Research interests}
+	\vspace{-0.5em}
+	\hspace{1em} High-dimensional statistics/econometrics, optimization methods for machine learning, mixed data sampling machine learning methods (MIDAS ML) with applications in finance
+	
+	
+	
+	\section*{Current position}
+	\vspace{-0.5em}
+	\hspace{1em} Research Fellow at F.R.S.-FNRS (Belgian National Fund for Scientific Research), 2018 October - present
+	
+	\section*{Education}
+	\vspace{-0.5em}
+	\hspace{1em} European Doctoral Program, Universit\'e catholique de Louvain, 2019 May - present
+	
+	
+	%\hspace{2em} Exchange at Universitat Pompeu Fabra (UPF) hosted by G{\'a}bor Lugosi and Christian Brownlees
+	\smallskip 
+	
+	\hspace{1em} Ph.D. Economics, Universit\'e catholique de Louvain, 2017 April - present
+	
+	\hspace{2em} Preliminary thesis title: “Estimation and Inference for High Dimensional Mixed Frequency Data Models”
+	
+	\hspace{2em} Committee: Prof. Andrii Babii, Prof. Rudy De Winne, Prof. Geert Dhaene, Prof. Eric Ghysels
+	
+	\smallskip 
+	
+	\hspace{1em} M.A. Quantitative Economics and Finance, University of St. Gallen, 2014
+	
+	\smallskip 
+	
+	\hspace{1em} B.Sc. Mathematics, Queen Mary University of London, 2013
+	
+	\section*{Publications}
+	\vspace{-0.5em}
+	\hspace{1em}``Machine Learning Time Series Regressions with an Application to Nowcasting'', \href{https://jstriaukas.github.io/files/papers/midas_ml_estimation.pdf}{pdf} \tikz \pic{linkpic};
+	
+	\hspace{2em} with A. Babii and E. Ghysels (2021), \textit{Journal of Business \& Economic Statistics} \href{https://www.tandfonline.com/doi/abs/10.1080/07350015.2021.1899933}{journal} \tikz \pic{linkpic};
+	
+	\hspace{1em}``Regularized Regression When Covariates Are Linked on a Network: The 3CoSE Algorithm'', \href{https://jstriaukas.github.io/files/papers/3cose.pdf}{pdf} \tikz \pic{linkpic};
+	
+	\hspace{2em} with M. Weber, M. Schumacher and H. Binder forthcoming at \textit{Journal of Applied Statistics} \href{https://www.tandfonline.com/doi/full/10.1080/02664763.2021.1982878}{journal} \tikz \pic{linkpic}; (open access)
+	
+	\section*{Working papers}
+	\vspace{-0.5em}
+	
+	\hspace{1em}``High-Dimensional Granger Causality Tests with an Application to VIX and News'', \href{https://jstriaukas.github.io/files/papers/midas_ml_inference.pdf}{pdf} \tikz \pic{linkpic};
+	
+	\hspace{2em} with A. Babii and E. Ghysels, revision requested at \textit{Journal of Financial Econometrics}
+	
+	\smallskip
+	
+	\hspace{1em}``Machine Learning Panel Data Regressions with Heavy-tailed Dependent Data: Theory and Application'', \href{https://jstriaukas.github.io/files/papers/midas_ml_panel_inference.pdf}{pdf} \tikz \pic{linkpic}; 
+	
+	\hspace{2em} with A. Babii, R. T. Ball and E. Ghysels, revision requested at \textit{Journal of Econometrics}
+	
+	\section*{Work in progress}
+	\vspace{-0.5em}
+	\smallskip
+	
+	\hspace{1em}``Panel Data Nowcasting in a Data-Rich Environment: The Case of Price-Earnings Ratios''
+	
+	\hspace{2em} with A. Babii, R. Ball and E. Ghysels
+	
+	\smallskip
+	
+	\hspace{1em}``(Very) Short Term Return Predictability''
+	
+	\hspace{2em} with A. Babii, E. Ghysels and F. Grigoris
+	
+	\smallskip
+	
+	\hspace{1em}``Outlier-Robust High-dimensional Expectile Regression with a Financial Application''
+	
+	\section*{Teaching experience}
+	\vspace{-0.5em}
+	
+	\hspace{1em} Practical sessions instructor\blfootnote{\thecircle Sessions were delivered online.} 
+	
+	\hspace{2em}  SoFiE summer school, NYU/Shanghai with Prof. Andrii Babii and Prof. Eric Ghysels, 2020 \thecirclenogap
+	
+	\hspace{2em}  SoFiE summer school, University of Chicago with Prof. Andrii Babii and Prof. Eric Ghysels, 2020 \thecirclenogap
+	
+	\hspace{2em} CORE Lectures Series with Prof. Eric Ghysels, 2019
+	
+	\smallskip
+	
+	\newpage 
+	
+	\hspace{1em} Teaching Assistant at Universit\'e catholique de Louvain for the following courses
+	
+	\hspace{2em} Master level, Big data in Finance with Prof. Eric Ghysels, 2019
+	
+	\hspace{2em} Master level, Forecasting with Prof. Eric Ghysels, 2018
+	
+	\section*{Presentations}
+	\vspace{-2em}
+	
+	\blfootnote{\thestar Virtual conference/seminar.} 
+	\begin{table}[!http]
+		\begin{tabular}{ll}
+			& \makecell[l]{2021: UNC PhD students econometrics workshop \thestarnogap; 3rd Baltic Economics Conference \thestarnogap; North American  \\ Summer Meeting of the Econometric Society \thestarnogap; SoFiE 2021 \thestarnogap; ECB workshop  \thestarnogap; European Summer Meeting of the \\ Econometric Society \thestarnogap; CFE 2021 (invited talk)\thestarnogap}  \\\smallskip
+			& \makecell[l]{2020:  UC Louvain CORE Brown Bag $\times$2 \thestarnogap; UNC PhD students econometrics workshop \thestarnogap}   \\\smallskip
+			& \makecell[l]{2019:  UC Louvain Finance PhD students workshop; Institute of Statistics, Biostatistics and Actuarial Sciences \\ Young Researchers Day;  The Winter Meeting of the Annual Lithuanian Conference on Economic Research}   \\\smallskip
+			& \makecell[l]{2018: 1st QMUL Economics and Finance Workshop for PhD \& Post-doctoral Students; UNC Kenan-Flagler \\ Business School; SoFiE summer school Brussels}  \\
+		\end{tabular}
+	\end{table}
+	\vspace{-1.75em}
+	
+	\section*{Awards \& Honors}
+	\vspace{-0.5em}
+	
+	\hspace{1em} F.R.S.-FNRS Aspirant fellowship grant, 2018 October - present
+	
+	\smallskip
+	
+	\hspace{1em} F.R.S.-FNRS travel grant, 2018 June
+	
+	\section*{Professional service}
+	\vspace{-0.5em}
+	\hspace{1em}\textsc{Reviewer}
+	
+	\smallskip
+	
+	\hspace{1em} Journal of Applied Econometrics, Journal of Econometrics, Journal of Financial Econometrics, Oxford Bulletin of Economics and Statistics, PLUS ONE
+	
+	\vspace{0.5em}
+	
+	\hspace{1em}\textsc{Statistical software}
+	
+	\smallskip
+	
+	\hspace{1em} R: midasml (\href{https://CRAN.R-project.org/package=midasml}{CRAN link} \tikz \pic{linkpic};), LassoNet (\href{https://CRAN.R-project.org/package=LassoNet}{CRAN link} \tikz \pic{linkpic}; ) 
+	
+	\smallskip
+	
+	\hspace{1em} Development code:  \href{https://CRAN.R-project.org/package=midasml}{GitHub} \tikz \pic{linkpic};
+	
+	\section*{Skills}
+	\vspace{-0.5em}
+	
+	\hspace{1em} Fortran, R (and Rcpp), C++, Matlab (and mex), Python, Stata, GitHub, \LaTeX
+	
+	\section*{References}
+	
+	\vspace{-0.5em}
+	\vspace{-1em}
+	\begin{table}[!h]
+		\begin{tabular}{l p{0.1cm} l}
+			Prof. Eric Ghysels & &Prof. Andrii Babii  \\
+			Co-advisor \& co-author && Committee member \& co-author \\
+			Edward M. Bernstein Distinguished Professor
+			of Economics & &Assistant Professor of Economics  \\
+			Professor of Finance & &University of North Carolina --- Chapel Hill  \\
+			University of North Carolina --- Chapel Hill & &Email: \href{mailto:andrii@email.unc.edu}{andrii@email.unc.edu} \\
+			Email: \href{mailto:eghysels@unc.edu}{eghysels@unc.edu} & &\\
+			& &\\
+			Prof. Rudy De Winne & &Prof. Geert Dhaene  \\
+			Co-advisor & &Committee member \\
+			Professor of Finance & &Professor of Economics  \\
+			UC Louvain && KU Leuven \\
+			Email: \href{mailto:rudy.dewinne@uclouvain.beu}{rudy.dewinne@uclouvain.be}& &Email: \href{mailto:geert.dhaene@kuleuven.be}{geert.dhaene@kuleuven.be} \\
+		\end{tabular}
+	\end{table}
+	
+	
+	
+\end{document}
