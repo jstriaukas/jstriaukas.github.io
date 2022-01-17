@@ -21,43 +21,76 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
-   section.Publications {
-    padding-top: 20px;
+        section.Publications {
+            padding-top: 20px;
+        }
 
-}
+        section.Publications div#accordion {
+            max-width: 700px;
+            margin: auto;
+        }
+        section.Publications div#accordion span.font-size24 {
+            width: 100%;
+            text-align: center !important;
+            display: block;
+        }
+        section.Artwork {
+            padding-top: 20px;
+        }
 
-section.Publications div#accordion {
-    max-width: 700px;
-    margin: auto;
-}
-     section.Publications div#accordion span.font-size24 {
-    width: 100%;
-    text-align: center !important;
-    display: block;
-}
+        section.Artwork div#accordion {
+            max-width: 700px;
+            margin: auto;
+        }
+        section.Artwork div#accordion span.font-size24 {
+            width: 100%;
+            text-align: center !important;
+            display: block;
+        }
 
-@media screen and (max-width: 990px) {
-    .navbar-collapse.desktop-hide.collapse.show {
-    position: inherit !important;
-    height: inherit !important;
-    overflow: inherit !important;
-    transition: inherit !important;
-}
+        @media screen and (max-width: 990px) {
+            .navbar-collapse.desktop-hide.collapse.show {
+            position: inherit !important;
+            height: inherit !important;
+            overflow: inherit !important;
+            transition: inherit !important;
+        }
+           .collapse:not(.show) {
+            display: inherit !important;
+        }
 
-   .collapse:not(.show) {
-    display: inherit !important;
-}
+        body.sidebar-menu {
+            padding: 0;
+        }
+        .bg-light-gray.sm-padding-50px-top {
+            padding-top: 100px !important;
+        }
+        }
 
-body.sidebar-menu {
-    padding: 0;
-}
+        div.gallery {
+          margin: 5px;
+          border: 1px solid #ccc;
+          float: left;
+          width: 280px;
+        }
 
-.bg-light-gray.sm-padding-50px-top {
-    padding-top: 100px !important;
-}
-}
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+
     </style>
   </head>
+  
   <body>
     <div id="preloader">
       <div class="row loader">
@@ -68,11 +101,7 @@ body.sidebar-menu {
     <nav class="navbar navbar-expand-lg border-none bg-light-gray desktop-hide">
       <div class="container sm-padding-10px-tb sm-padding-15px-lr">
         <a class="logo" href="javascript:void(0);" data-scroll-nav="0">
-        <h6 style="
-    color: #000;
-    font-size: 16px;
-    font-weight: bold;
-">Jonas Striaukas</h6>
+        <h6 style=" color: #000; font-size: 16px; font-weight: bold; ">Jonas Striaukas</h6>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-label="Toggle navigation">
           <span class="icon-bar"><i class="fas fa-bars"></i></span>
@@ -85,9 +114,10 @@ body.sidebar-menu {
             <li class="nav-item">
               <a class="nav-link" href="http://jstriaukas.github.io/files/cv.pdf" target="_blank">Curriculum Vitae</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="1">Research</a>
+            <!---<li class="nav-item">
+              <a class="nav-link" href="pages/artwork.html" target="_blank">My art-work</a>
             </li>
+            --->
           </ul>
         </div>
       </div>
@@ -111,14 +141,14 @@ body.sidebar-menu {
             <li class="nav-item">
               <a class="nav-link" href="files/cv.pdf" target="_blank">Curriculum Vitae</a>
             </li>
-            <!--
+            <!---
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="1">Research</a>
+              <a class="nav-link" href="pages/artwork.html" data-scroll-nav="2">My art-work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="2">Teaching</a>
+              <a class="nav-link" href="javascript:void(0);" data-scroll-nav="3">Teaching</a>
             </li>
-			-->
+			--->
           </ul>
         </nav>
         <div class="separator-line-horrizontal-full bg-extra-light-gray margin-15px-bottom"></div>
@@ -177,10 +207,10 @@ body.sidebar-menu {
       <p class="font-size16 xs-font-size11">
   		<ul class="fa-ul">
   		<li><span style="color:2C2CB0; font-size: 120%">References</span></li>
-      <li><i class="fa-li fas fa-spinner fa-spin fa-envelope"></i><a style="color:#000000" >Andrii Babii </a><a>(UNC Chapel Hill)</a></li>
-      <li><i class="fa-li fas fa-spinner fa-spin fa-envelope"></i><a style="color:#000000" >Rudy De Winne </a><a>(UCLouvain)</a></li>
-      <li><i class="fa-li fas fa-spinner fa-spin fa-envelope"></i><a style="color:#000000" >Geert Dhaene </a><a>(KU Leuven)</a></li>
-      <li><i class="fa-li fas fa-spinner fa-spin fa-envelope"></i><a style="color:#000000" >Eric Ghysels </a><a>(UNC Chapel Hill)</a></li>
+              <li><i class="fa-li fas fa-spinner fa-spin fa-envelope"></i><a style="color:#000000" >Andrii Babii </a><a>(UNC Chapel Hill)</a></li>
+              <li><i class="fa-li fas fa-spinner fa-spin fa-envelope"></i><a style="color:#000000" >Rudy De Winne </a><a>(UCLouvain)</a></li>
+              <li><i class="fa-li fas fa-spinner fa-spin fa-envelope"></i><a style="color:#000000" >Geert Dhaene </a><a>(KU Leuven)</a></li>
+              <li><i class="fa-li fas fa-spinner fa-spin fa-envelope"></i><a style="color:#000000" >Eric Ghysels </a><a>(UNC Chapel Hill)</a></li>
   		</ul>
   		</p>
       </div>
@@ -193,13 +223,6 @@ body.sidebar-menu {
 
       <section class="Publications" data-scroll-index="1">
         <div class="container">
-          <!---
-          <div class="row">
-            <div class="col-12 center-col margin-70px-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
-              <h2 class="font-size34 md-font-size30 sm-font-size26 xs-font-size24 font-weight-700 section-title">Research</h2>
-            </div>
-          </div>
-	   -->
           <div class="row">
           <div class="col-lg-12 col-md-12 sm-margin-10px-bottom">
 
@@ -214,7 +237,7 @@ body.sidebar-menu {
             	Publications
            	</span>
            	<br><br>
-	    <span class="font-size16">
+            <span class="font-size16">
             	<b>Regularized Regression When Covariates Are Linked on a Network: The 3CoSE Algorithm</b>
             </span>
 
@@ -223,8 +246,9 @@ body.sidebar-menu {
             <br><button type="button" class="button button1" data-toggle="collapse" data-target="#wp_lassonet">Abstract+</button><a> | </a><a class="hyperlink1" href="files/papers/3cose.pdf" target="_blank">pdf |</a><a> </a><a class="hyperlink1" href="https://cran.r-project.org/web/packages/LassoNet/index.html" target="_blank">CRAN package</a>
             </span>
             <div id="wp_lassonet" class="collapse in">
-            	Covariates in regressions may be linked to each other on a network. Knowledge on the network structure can be incorporated into regularized regression settings via a network penalty term. However, when it is unknown whether the connection signs in the network are positive (connected covariates reinforce each other) or negative (connected covariates repress each other), the connection signs have to be estimated jointly with the covariate coefficients. This can be done with an algorithm iterating a connection sign estimation step and a covariate coefficient estimation step. We develop such an algorithm, called 3CoSE, and show detailed simulation results and an application forecasting event times. The algorithm performs well in a variety of settings. We also briefly describe the publicly available R-package developed for this purpose.
-	    </div>
+                Covariates in regressions may be linked to each other on a network. Knowledge on the network structure can be incorporated into regularized regression settings via a network penalty term. However, when it is unknown whether the connection signs in the network are positive (connected covariates reinforce each other) or negative (connected covariates repress each other), the connection signs have to be estimated jointly with the covariate coefficients. This can be done with an algorithm iterating a connection sign estimation step and a covariate coefficient estimation step. We develop such an algorithm, called 3CoSE, and show detailed simulation results and an application forecasting event times. The algorithm performs well in a variety of settings. We also briefly describe the publicly available R-package developed for this purpose.
+            </div>
+            
      	    <br><br>
 
             <span class="font-size16">
@@ -236,9 +260,11 @@ body.sidebar-menu {
             <br><button type="button" class="button button1" data-toggle="collapse" data-target="#wp_midasml">Abstract+</button><a> | </a><a class="hyperlink1" href="files/papers/midas_ml_estimation.pdf" target="_blank">pdf |</a><a> </a><a class="hyperlink1" href="https://cran.r-project.org/web/packages/midasml/index.html" target="_blank">CRAN package |</a><a> </a><a class="hyperlink1" href="https://github.com/ababii/Pythia.jl" target="_blank">Julia package (Andrii Babii, cre & aut)</a>
             </span>
             <div id="wp_midasml" class="collapse in">
-              This paper introduces structured machine learning regressions for high-dimensional time series data potentially sampled at different frequencies. The sparse-group LASSO estimator can take advantage of such time series data structures and outperforms the unstructured LASSO. We establish oracle inequalities for the sparse-group LASSO estimator within a framework that allows for the mixing processes and recognizes that the financial and the macroeconomic data may have heavier than exponential tails. An empirical application to nowcasting US GDP growth indicates that the estimator performs favorably compared to other alternatives and that text data can be a useful addition to more traditional numerical data.
+                This paper introduces structured machine learning regressions for high-dimensional time series data potentially sampled at different frequencies. The sparse-group LASSO estimator can take advantage of such time series data structures and outperforms the unstructured LASSO. We establish oracle inequalities for the sparse-group LASSO estimator within a framework that allows for the mixing processes and recognizes that the financial and the macroeconomic data may have heavier than exponential tails. An empirical application to nowcasting US GDP growth indicates that the estimator performs favorably compared to other alternatives and that text data can be a useful addition to more traditional numerical data.
             </div>
+            
 			 <br><br>
+             
 			 <!-- Working papers -->
             <span class="font-size24" style="font-family: Montserrat, sans-serif; text-align: center">
             	Working papers
@@ -252,9 +278,11 @@ body.sidebar-menu {
             <br><button type="button" class="button button1" data-toggle="collapse" data-target="#wp_midasmlhac">Abstract+</button><a> | </a><a class="hyperlink1" href="files/papers/midas_ml_inference.pdf" target="_blank">pdf</a>
             </span>
             <div id="wp_midasmlhac" class="collapse in">
-              We study Granger causality testing for high-dimensional time series using regularized regressions. To perform proper inference, we rely on heteroskedasticity and autocorrelation consistent (HAC) estimation of the asymptotic variance and develop the inferential theory in the high-dimensional setting. To recognize the time series data structures we focus on the sparse-group LASSO estimator, which includes the LASSO and the group LASSO as special cases. We establish the debiased central limit theorem for low dimensional groups of regression coefficients and study the HAC estimator of the long-run variance based on the sparse-group LASSO residuals. This leads to valid time series inference for individual regression coefficients as well as groups, including Granger causality tests. The treatment relies on a new Fuk-Nagaev inequality for a class of τ-mixing processes with heavier than Gaussian tails, which is of independent interest. In an empirical application, we study the Granger causal relationship between the VIX and financial news.
+                We study Granger causality testing for high-dimensional time series using regularized regressions. To perform proper inference, we rely on heteroskedasticity and autocorrelation consistent (HAC) estimation of the asymptotic variance and develop the inferential theory in the high-dimensional setting. To recognize the time series data structures we focus on the sparse-group LASSO estimator, which includes the LASSO and the group LASSO as special cases. We establish the debiased central limit theorem for low dimensional groups of regression coefficients and study the HAC estimator of the long-run variance based on the sparse-group LASSO residuals. This leads to valid time series inference for individual regression coefficients as well as groups, including Granger causality tests. The treatment relies on a new Fuk-Nagaev inequality for a class of τ-mixing processes with heavier than Gaussian tails, which is of independent interest. In an empirical application, we study the Granger causal relationship between the VIX and financial news.
             </div>
+            
             <br><br>
+            
             <span class="font-size16">
             <b>Machine Learning Panel Data Regressions with Heavy-tailed Dependent Data: Theory and Application</b>
             </span>
@@ -264,30 +292,32 @@ body.sidebar-menu {
             <br><button type="button" class="button button1" data-toggle="collapse" data-target="#wp_midasmlpanel">Abstract+</button><a> | <a class="hyperlink1" href="files/papers/midas_ml_panel_inference.pdf" target="_blank">pdf</a> |</a><a> </a><a class="hyperlink1" href="https://cran.r-project.org/web/packages/midasml/index.html" target="_blank">CRAN package</a>
             </span>
             <div id="wp_midasmlpanel" class="collapse in">
-              The paper introduces structured machine learning regressions for heavy-tailed dependent panel data potentially sampled at differentrent frequencies. We focus on the
-sparse-group LASSO regularization. This type of regularization can take advantage of the mixed frequency time series panel data structures and improve the quality of the estimates. We obtain oracle inequalities for the pooled and fixed effects sparse-group LASSO panel data estimators recognizing that financial and economic data can have fat tails. To that end, we leverage on a new Fuk-Nagaev concentration inequality for panel data consisting of heavy-tailed &tau;-mixing processes. Lastly, we study the HAC estimator of the long-run variance based on the sparse-group LASSO residuals for pooled panel regression. Therefore, we provide a valid inference method individual regression coefficients as well as groups, including Granger causality tests, for high-dimensional pooled panel regressions.
+                The paper introduces structured machine learning regressions for heavy-tailed dependent panel data potentially sampled at differentrent frequencies. We focus on the sparse-group LASSO regularization. This type of regularization can take advantage of the mixed frequency time series panel data structures and improve the quality of the estimates. We obtain oracle inequalities for the pooled and fixed effects sparse-group LASSO panel data estimators recognizing that financial and economic data can have fat tails. To that end, we leverage on a new Fuk-Nagaev concentration inequality for panel data consisting of heavy-tailed &tau;-mixing processes. Lastly, we study the HAC estimator of the long-run variance based on the sparse-group LASSO residuals for pooled panel regression. Therefore, we provide a valid inference method individual regression coefficients as well as groups, including Granger causality tests, for high-dimensional pooled panel regressions.
             </div>
+            
             <br><br>
 
-		<!-- Work in progress -->
+            <!-- Work in progress -->
             <span class="font-size24" style="font-family: Montserrat, sans-serif; text-align: center">
             	Work in progress
            	</span>
            	<br><br>
 
-	    <span class="font-size16">
-            <b>Outlier-Robust High-dimensional Expectile Regression with a Financial Application</b>
+            <span class="font-size16">
+                <b>Outlier-Robust High-dimensional Expectile Regression with a Financial Application</b>
             </span>
-	    <br><br>
+            
+            <br><br>
 
             <span class="font-size16">
-            <b>(Very) Short Term Return Predictability</b>
+                <b>(Very) Short Term Return Predictability</b>
             </span>
             <span class="font-size14">
             <br><a>&nbsp; &nbsp;joint with <a class="hyperlink1" href="https://ababii.github.io/" target="_blank">Andrii Babii</a>, <a class="hyperlink1" href="https://eghysels.web.unc.edu/" target="_blank">Eric Ghysels</a> & <a class="hyperlink1" href="https://www.fotig.com/" target="_blank">Foti Grigoris</a>
             </span>
 
             <br><br>
+            
             <span class="font-size16">
             <b>Panel Data Nowcasting in a Data-Rich Environment: The Case of Price-Earnings Ratios</b>
             </span>
@@ -305,24 +335,74 @@ sparse-group LASSO regularization. This type of regularization can take advantag
 	          <span class="font-size16">
             <b>Quantile-based Inflation Risk Models</b>
             </span>
-                        <span class="font-size14">
+            <span class="font-size14">
             <br><a>&nbsp; &nbsp;joint with <a class="hyperlink1" href="https://eghysels.web.unc.edu/" target="_blank">Eric Ghysels</a> and Leonardo Iania, 2018, National Bank of Belgium working papers</a>
             </span>
 
-	          <br><br>
+            <br><br>
 
-	          </div>
+            </div>
 
             </div>
 			</div>
 	        </div>
-	         </p>
-
+            </p>
             </div>
-
         </div>
       </section>
+      <!---
+      <section class="Artwork" data-scroll-index="2">
+           <div class="container padding-ten-bottom">
+           <div class="row">
+           <div class="col-lg-12 col-md-12 sm-margin-10px-bottom">
 
+
+           <div class="" id="accordion" role="tablist" aria-multiselectable="true">
+           <div class="panel panel-default">
+           <div class="" role="tab" id="headingOne">
+
+           <span class="font-size24"  style="font-family: Montserrat, sans-serif; text-align: center">
+                 My art work
+           </span>
+           <div class="gallery">
+               <a target="_blank" href="files/art/looking-out-of-the-window.jpeg">
+                   <img src="files/art/looking-out-of-the-window.jpeg" alt="Window" width="1200" height="800">
+                   <div class="desc">Looking out of the window</div>
+               </a>
+            
+           
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="files/art/back-to-the-countryside.jpeg">
+                    <img src="files/art/back-to-the-countryside.jpeg" alt="Countryside" width="1200" height="800">
+                    <div class="desc">Back to the countryside</div>
+                </a>
+                
+            </div>
+            
+            <div class="gallery">
+                <a target="_blank" href="files/art/fruits.jpeg">
+                    <img src="files/art/fruits.jpeg" alt="Fruits" width="1200" height="800">
+                </a>
+                <div class="desc">Fruits</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="files/art/redeye.jpeg">
+                    <img src="files/art/redeye.jpeg" alt="Redeye" width="1200" height="800">
+                </a>
+                <div class="desc">RedEye</div>
+            </div>
+          </div>
+          </div>
+          </div>
+          
+          </div>
+          </div>
+          </div>
+      </section>
+      --->
+      
       <footer class="bg-black">
         <div id="back-to-top" class="back-to-top reveal">
           <i class="fa fa-angle-up"></i>
