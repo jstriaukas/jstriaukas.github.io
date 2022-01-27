@@ -51,7 +51,7 @@
 \newcommand{\thestarnogap}{{\Large{\color{blue}$\star$}}}
 \newcommand{\thecirclenogap}{{\Large{\color{blue}$\circ$}}}
 \newcommand{\thestarup}{{\LARGE{\color{blue}$^\star$}}}
-
+\pagenumbering{gobble}
 
 
 %\usepackage{authblk}
@@ -61,8 +61,12 @@
 %midasML:  \href{https://www.midasml.com/}{https://www.midasml.com}\ \tikz \pic{linkpic};
 
 \begin{document}
-	
 	\maketitle
+	\tikz[remember picture,overlay]
+	\node[anchor=north east,inner sep=0pt] at (current page.north east)
+	{\includegraphics[height=2cm]{qr-web/qr-web.pdf}};
+	
+
 	\vspace{-5.5em}
 	\begin{table}[!ht]
 		\begin{tabular}{l p{6.0cm} r}
@@ -79,6 +83,8 @@
 	\section*{Research interests}
 	\vspace{-0.5em}
 	\hspace{1em} High-dimensional (time series) econometrics \& statistics, mixed frequency data econometric methods with applications in finance \& macroeconomics
+	
+
 	
 	
 	
