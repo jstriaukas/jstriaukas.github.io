@@ -284,46 +284,50 @@
             <div class="" role="tab" id="headingOne">
 
             <span class="font-size24"  style="font-family: Montserrat, sans-serif; text-align: center">
-            	Publications
+            	Publications 
            	</span>
            	<br><br>
-           	
-           	
-           	 <p class="publication-list">
-            	[1] Machine Learning Time Series Regressions with an Application to Nowcasting, (2022), Journal of Business & Economic Statistics, 40, 1094–1106. —
-            <button type="button" class="button button1" data-toggle="collapse" data-target="#wp_midasml">Abstract+</button><a> | </a><a class="hyperlink1" href="files/papers/midas_ml_estimation.pdf" target="_blank">pdf</a> | <a> </a><a class="hyperlink1" href="https://cran.r-project.org/web/packages/midasml/index.html" target="_blank">CRAN package</a> <a> </a>
+
+
+            <span class="font-size14">
+            	<b>[1] Machine Learning Time Series Regressions with an Application to Nowcasting, (2022).</b>
+            </span>
+
+            <span class="font-size14">
+            </a><a>Journal of Business & Economic Statistics, 40, 1094–1106. — </a>
+            <button type="button" class="button button1" data-toggle="collapse" data-target="#wp_midasml">Abstract+</button><a> | </a><a class="hyperlink1" href="files/papers/midas_ml_estimation.pdf" target="_blank">pdf</a> | <a> </a><a class="hyperlink1" href="https://cran.r-project.org/web/packages/midasml/index.html" target="_blank">CRAN package</a> |
             </span>
             <div id="wp_midasml" class="collapse in">
                 This paper introduces structured machine learning regressions for high-dimensional time series data potentially sampled at different frequencies. The sparse-group LASSO estimator can take advantage of such time series data structures and outperforms the unstructured LASSO. We establish oracle inequalities for the sparse-group LASSO estimator within a framework that allows for the mixing processes and recognizes that the financial and the macroeconomic data may have heavier than exponential tails. An empirical application to nowcasting US GDP growth indicates that the estimator performs favorably compared to other alternatives and that text data can be a useful addition to more traditional numerical data.
             </div>
-           	</span>
-           	</p>
-           	
-           	<br> 
-           	
-           	<p class="publication-list">
-            [2] High-Dimensional Granger Causality Tests with an Application to VIX and News, (2022), forthcoming at Journal of Financial Econometrics. —
-            </span>
+	          <br>
+			 
             <span class="font-size14">
-            <button type="button" class="button button1" data-toggle="collapse" data-target="#wp_midasmlhac">Abstract+</button><a> | </a><a class="hyperlink1" href="files/papers/midas_ml_inference.pdf" target="_blank">pdf</a> | <a> </a><a class="hyperlink1" href="https://cran.r-project.org/web/packages/midasml/index.html" target="_blank">CRAN package</a>
+            	<b>[2] High-Dimensional Granger Causality Tests with an Application to VIX and News, (2022).</b>
             </span>
-            <div id="wp_midasmlhac" class="collapse in">
+
+            <span class="font-size14">
+            </a><a>Journal of Financial Econometrics, forthcoming. — </a>
+            <button type="button" class="button button1" data-toggle="collapse" data-target="#wp_midas_granger">Abstract+</button><a> | </a><a class="hyperlink1" href="files/papers/midas_ml_inference.pdf" target="_blank">pdf</a> | <a> </a><a class="hyperlink1" href="https://cran.r-project.org/web/packages/midasml/index.html" target="_blank">CRAN package</a> |
+            </span>
+            <div id="wp_midas_granger" class="collapse in">
                 We study Granger causality testing for high-dimensional time series using regularized regressions. To perform proper inference, we rely on heteroskedasticity and autocorrelation consistent (HAC) estimation of the asymptotic variance and develop the inferential theory in the high-dimensional setting. To recognize the time series data structures we focus on the sparse-group LASSO estimator, which includes the LASSO and the group LASSO as special cases. We establish the debiased central limit theorem for low dimensional groups of regression coefficients and study the HAC estimator of the long-run variance based on the sparse-group LASSO residuals. This leads to valid time series inference for individual regression coefficients as well as groups, including Granger causality tests. The treatment relies on a new Fuk-Nagaev inequality for a class of τ-mixing processes with heavier than Gaussian tails, which is of independent interest. In an empirical application, we study the Granger causal relationship between the VIX and financial news.
             </div>
-            </p>
-            <br> 
-            
-            <p class="publication-list">
-            [3] Regularized Regression When Covariates Are Linked on a Network: The 3CoSE Algorithm, (2021), Forthcoming at Journal of Applied Statistics. - 
+			      <br>
+			      
+           <span class="font-size14">
+            	<b>[3] Regularized Regression When Covariates Are Linked on a Network: The 3CoSE Algorithm, (2021).</b>
             </span>
+
             <span class="font-size14">
-            <button type="button" class="button button1" data-toggle="collapse" data-target="#wp_lassonet">Abstract+</button><a> | </a><a class="hyperlink1" href="files/papers/3cose.pdf" target="_blank">pdf</a> | <a> </a><a class="hyperlink1" href="https://cran.r-project.org/web/packages/LassoNet/index.html" target="_blank">CRAN package</a>
+            </a><a>Journal of Applied Statistics, forthcoming. — </a>
+            <button type="button" class="button button1" data-toggle="collapse" data-target="#wp_3cose">Abstract+</button><a> | </a><a class="hyperlink1" href="files/papers/3CoSE.pdf" target="_blank">pdf</a> | <a> </a><a class="hyperlink1" href="https://cran.r-project.org/web/packages/LassoNet/index.html" target="_blank">CRAN package</a> |
             </span>
-            <div id="wp_lassonet" class="collapse in">
-                Covariates in regressions may be linked to each other on a network. Knowledge on the network structure can be incorporated into regularized regression settings via a network penalty term. However, when it is unknown whether the connection signs in the network are positive (connected covariates reinforce each other) or negative (connected covariates repress each other), the connection signs have to be estimated jointly with the covariate coefficients. This can be done with an algorithm iterating a connection sign estimation step and a covariate coefficient estimation step. We develop such an algorithm, called 3CoSE, and show detailed simulation results and an application forecasting event times. The algorithm performs well in a variety of settings. We also briefly describe the publicly available R-package developed for this purpose.
-          </div>
-          </p>
-          
+            <div id="wp_3cose" class="collapse in">
+                Covariates in regressions may be linked to each other on a network. Knowledge of the network structure can be incorporated into regularized regression settings via a network penalty term. However, when it is unknown whether the connection signs in the network are positive (connected covariates reinforce each other) or negative (connected covariates repress each other), the connection signs have to be estimated jointly with the covariate coefficients. This can be done with an algorithm iterating a connection sign estimation step and a covariate coefficient estimation step. We develop such an algorithm, called 3CoSE, and show detailed simulation results and an application forecasting event times. The algorithm performs well in a variety of settings. We also briefly describe the publicly available R-package developed for this purpose.
+            </div>
+			      <br>
+			      
           
           </div>
           </div>
