@@ -1750,5 +1750,7 @@ ul.countdown li {
   .header .caption h1 {
     font-size: 20px;
     margin-top: 5px; } }
-
+body.sidebar-menu {
+    background: #f7f7f7;
+}
 /*# sourceMappingURL=style.css.map */
