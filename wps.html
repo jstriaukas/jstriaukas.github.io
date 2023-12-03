@@ -237,7 +237,7 @@
                         <p class="font-size16 xs-font-size11">
                         <ul class="fa-ul">
                             <li><span style="color:2C2CB0; font-size: 120%">What's new</span></li> <!---  --->
-                            <li><i class="fa-li fas fa-spinner fa-spin"></i>Happy to share that I received an MSCA fellowship grant from April 1, 2023</li> <!--- ----------------------------- --->
+                            <li><i class="fa-li fas fa-spinner fa-spin"></i>Two new working papers on factor-augmented sparse regressions — check them out in Working papers section!</li> <!--- ----------------------------- --->
                         </ul>
                         </p>
                      </div>
@@ -258,16 +258,14 @@
                               </span>
                               <br>
                               <span class="font-size16">
-                                    Factor-augmented sparse MIDAS regression for nowcasting
+                                  Sparse plus dense MIDAS regressions and nowcasting during the COVID pandemic
                               </span>
                               <span class="font-size14">
-                              <br><a>&nbsp; &nbsp;with <a class="hyperlink1" href="https://sites.google.com/view/jad-beyhum" target="_blank">Jad Beyhum</a>, 2023</a><a>  — </a>
+                              <br><a>&nbsp; &nbsp;with <a class="hyperlink1" href="https://sites.google.com/view/jad-beyhum" target="_blank">Jad Beyhum</a>, 2023, Submitted</a><a>  — </a>
                               <button type="button" class="button button1" data-toggle="collapse" data-target="#wp_famidasml">Abstract+</button><a> | <a class="hyperlink1" href="files/papers/famidas_ml.pdf" target="_blank">pdf</a> |</a><a> </a><a> </a><a class="hyperlink1" href="https://cran.r-project.org/web/packages/midasml/index.html" target="_blank">CRAN package</a>
                               </span>
                               <div id="wp_famidasml" class="collapse in">
-                                  GDP nowcasting commonly employs either sparse regression or a dense approach based on factor models, which differ in the way they extract information from high-dimensional datasets. This paper aims to investigate whether augmenting sparse regression with (estimated) factors can improve nowcasts. We propose an estimator for a factor-augmented sparse MIDAS regression model. The rates of convergence of the estimator are derived in a time series context, accounting for tau-mixing processes and fat-tailed distributions.
-                                          
-                                  The application of this new technique to nowcast US GDP growth reveals several key findings. Firstly,  our novel technique significantly improves the quality of nowcasts compared to both sparse regression and plain factor-augmented regression benchmarks over a period period from 2008 Q1 to 2022 Q2. This improvement is particularly pronounced during the COVID pandemic, indicating the model's ability to capture the specific dynamics introduced by the pandemic. Interestingly, our novel factor-augmented sparse method does not perform significantly better than sparse regression prior to the onset of the pandemic, suggesting that using only a few predictors is sufficient for nowcasting in more stable economic times.
+                                  The common practice for GDP nowcasting in a data-rich environment is to employ either sparse regression using LASSO-type regularization or a dense approach based on factor models or ridge regression, which differ in the way they extract information from high-dimensional datasets. This paper aims to investigate whether sparse plus dense mixed frequency regression methods can improve the nowcasts of the US GDP growth. We propose two novel MIDAS regressions and show that these novel sparse plus dense methods greatly improve the accuracy of nowcasts during the COVID pandemic compared to either only sparse or only dense approaches. Using monthly macro and weekly financial series, we further show that the improvement is particularly sharp when the dense component is restricted to be macro, while the sparse signal stems from both macro and financial series.
                               </div>
                               <br>
                               <span class="font-size16">
