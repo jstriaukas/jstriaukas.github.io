@@ -1,0 +1,122 @@
+\documentclass[10pt]{article}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=1cm]{geometry}
+\setlength\parindent{0pt}
+\usepackage{xcolor}
+\usepackage[numbers]{natbib}
+\usepackage{changepage}
+\definecolor{darkblue}{rgb}{0, 0.0392, 0.8039}
+\definecolor{skypeblue}{rgb}{0, 0.6862, 0.9411}
+\usepackage[colorlinks=true,linkcolor=darkblue,urlcolor=darkblue,citecolor=darkblue,anchorcolor=darkblue]{hyperref}
+\usepackage{fontawesome}
+\usepackage{academicons}
+\usepackage{titlesec}
+\usepackage{makecell}
+\usepackage{enumitem}
+\renewcommand{\cellalign}{l}
+
+\titleformat{\section}
+{\normalfont\scshape}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\scshape}{\thesubsection}{1em}{}
+
+\usepackage{datetime}
+\newdateformat{monthyeardate}{%
+	\monthname[\THEMONTH], \THEYEAR}
+
+\newcommand\blfootnote[1]{%
+	\begingroup
+	\renewcommand\thefootnote{}\footnote{#1}%
+	\addtocounter{footnote}{-1}%
+	\endgroup
+}
+
+\usepackage{tikz}
+\tikzset{
+	linkpic/.pic={
+		\draw[line width=0.15mm, blue] (0,0) -- (0.2,0);
+		\draw[line width=0.15mm, blue]  (0.2,0) -- (0.2,0.12);
+		\draw[line width=0.15mm, blue]  (0.12,0.2) -- (0,0.2);
+		\draw[line width=0.15mm, blue]  (0,0.2) -- (0,0);
+		\filldraw[blue] (0,0) circle (0.03pt);  %left-south corner
+		\filldraw[blue] (0.2,0) circle (0.03pt); %right-south corner
+		\filldraw[blue] (0,0.2) circle (0.03pt); %left-south corner
+		\filldraw[blue] (0.12,0.2) circle (0.03pt); %right-north to right corner
+		\filldraw[blue] (0.2,0.12) circle (0.03pt); %right-north to north corner
+		\draw[line width=0.15mm,blue] (0.1,0.1) -- (0.25,0.25); %arrow from center
+		\draw[line width=0.15mm,blue] (0.25,0.14) -- (0.25,0.25); %arrow to south
+		\draw[line width=0.15mm,blue] (0.12,0.25) -- (0.25,0.25); %arrow from left
+		\filldraw[blue] (0.25,0.25) circle (0.03pt); %arrow-end
+}}
+
+\newcommand{\thestar}{{\Large{\color{blue}\ensuremath{\star}} }}
+\newcommand{\thestarnogap}{{\Large{\color{blue}\ensuremath{^\star}}}}
+
+
+\newcommand{\thecircle}{{\Large{\color{blue}$\circ$} }}
+\newcommand{\thecirclenogap}{{\Large{\color{blue}$\circ$}}}
+\newcommand{\thestarup}{{\LARGE{\color{blue}$^\star$}}}
+\pagenumbering{gobble}
+
+
+%\usepackage{authblk}
+\title{\vspace{-2.0cm}\textsc{Jonas Striaukas}\\\small{\monthyeardate\today}}
+\author{}
+\date{}
+%midasML:  \href{https://www.midasml.com/}{https://www.midasml.com}\ \tikz \pic{linkpic};
+
+\begin{document}
+	\maketitle
+	%\tikz[remember picture,overlay]
+	%\node[anchor=north east,inner sep=0pt] at (current page.north east)
+	%{\includegraphics[height=2cm]{qr-web/qr-web.pdf}};
+	
+
+
+
+	\section*{Publications}
+	\vspace{-0.5em}
+
+	\hspace{1em}``Panel data nowcasting: The case of price-earnings ratios''
+
+	\hspace{2em} with A. Babii, R. Ball and E. Ghysels, \textit{Journal of Applied Econometrics}. 
+	
+	\hspace{2em} \href{https://jstriaukas.github.io/files/papers/midas_ml_panel_earnings_nowcasting.pdf}{pdf} \tikz \pic{linkpic};  \href{https://onlinelibrary.wiley.com/doi/full/10.1002/jae.3028}{journal} \tikz \pic{linkpic}; 
+
+	
+	\smallskip
+
+	\hspace{1em}``Regularized regression when covariates are linked on a network: The 3CoSE algorithm'', 
+
+	\hspace{2em} with M. Weber, M. Schumacher and H. Binder, (2023), \textit{Journal of Applied Statistics}, 50(3), 535-554. 
+
+	\hspace{2em}  \href{https://jstriaukas.github.io/files/papers/3cose.pdf}{pdf} \tikz \pic{linkpic}; \href{https://www.tandfonline.com/doi/full/10.1080/02664763.2021.1982878}{journal} \tikz \pic{linkpic};
+
+	\smallskip
+
+	\hspace{1em}``Machine learning panel data regressions with heavy-tailed dependent data: Theory and application'', 
+
+	\hspace{2em} with A. Babii, R. T. Ball and E. Ghysels, (2022), \textit{Journal of Econometrics}. 
+	
+	\hspace{2em} \href{https://jstriaukas.github.io/files/papers/midas_ml_panel_inference.pdf}{pdf} \tikz \pic{linkpic}; \href{https://doi.org/10.1016/j.jeconom.2022.07.001}{journal} \tikz \pic{linkpic};
+	
+	\smallskip
+	
+	\hspace{1em}``Machine learning time series regressions with an application to nowcasting'', 
+	\begin{adjustwidth}{0pt}{-20pt}
+	\hspace{2em} with A. Babii and E. Ghysels (2022), \textit{Journal of Business \& Economic Statistics}, 40(3), 1094–1106. 
+	
+	\hspace{2em}  \href{https://jstriaukas.github.io/files/papers/midas_ml_estimation.pdf}{pdf} \tikz \pic{linkpic}; \href{https://www.tandfonline.com/doi/abs/10.1080/07350015.2021.1899933}{journal} \tikz \pic{linkpic};
+	\end{adjustwidth}
+	\smallskip
+	
+	\hspace{1em}``High-dimensional Granger causality tests with an application to VIX and news'', 
+	
+	\hspace{2em} with A. Babii and E. Ghysels, (2022), \textit{Journal of Financial Econometrics}. 
+	
+ 	\hspace{2em} \href{https://jstriaukas.github.io/files/papers/midas_ml_inference.pdf}{pdf} \tikz \pic{linkpic}; \href{https://doi.org/10.1093/jjfinec/nbac023}{journal} \tikz \pic{linkpic}; 
+	
+
+	
+	
+	
+\end{document}
