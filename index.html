@@ -234,14 +234,14 @@
                         </span>
                         <br><br>
                         <span class="font-size16">
-                        Machine learning panel data regressions with heavy-tailed dependent data: Theory and application
+                        Testing for sparse idiosyncratic components in factor-augmented regression models
                         </span>
                         <span class="font-size14">
-                        <br><a>&nbsp; &nbsp;with <a class="hyperlink1" href="https://ababii.github.io/" target="_blank">Andrii Babii</a>, Ryan Ball & <a class="hyperlink1" href="https://eghysels.web.unc.edu/" target="_blank">Eric Ghysels</a>, 2022</a>, <a> forthcoming at Journal of Econometrics  — </a>
-                        <button type="button" class="button button1" data-toggle="collapse" data-target="#wp_midasmlpanel">Abstract+</button><a> | <a class="hyperlink1" href="files/papers/midas_ml_panel_inference.pdf" target="_blank">pdf</a> |</a><a> </a><a class="hyperlink1" href="https://cran.r-project.org/web/packages/midasml/index.html" target="_blank">CRAN package</a>
+                        <br><a>&nbsp; &nbsp;with <a class="hyperlink1" href="https://sites.google.com/view/jad-beyhum" target="_blank">Jad Beyhum, <a>forthcoming at Journal of Econometrics  — </a>
+                        <button type="button" class="button button1" data-toggle="collapse" data-target="#wp_fas">Abstract+</button><a> | <a class="hyperlink1" href="files/papers/factor_sparse_test.pdf" target="_blank">pdf</a> |</a><a> </a><a class="hyperlink1" href="https://cran.r-project.org/web/packages/FAS/index.html" target="_blank">CRAN package</a>
                         </span>
-                        <div id="wp_midasmlpanel" class="collapse in">
-                           The paper introduces structured machine learning regressions for heavy-tailed dependent panel data potentially sampled at differentrent frequencies. We focus on the sparse-group LASSO regularization. This type of regularization can take advantage of the mixed frequency time series panel data structures and improve the quality of the estimates. We obtain oracle inequalities for the pooled and fixed effects sparse-group LASSO panel data estimators recognizing that financial and economic data can have fat tails. To that end, we leverage on a new Fuk-Nagaev concentration inequality for panel data consisting of heavy-tailed &tau;-mixing processes. Lastly, we study the HAC estimator of the long-run variance based on the sparse-group LASSO residuals for pooled panel regression. Therefore, we provide a valid inference method individual regression coefficients as well as groups, including Granger causality tests, for high-dimensional pooled panel regressions.
+                        <div id="wp_fas" class="collapse in">
+                            We propose a novel bootstrap test of a dense model, namely factor regression, against a sparse plus dense alternative augmented model with sparse idiosyncratic components. The asymptotic properties of the test are established under time series dependence and polynomial tails. We outline a data-driven rule to select the tuning parameter and prove its theoretical validity. In simulation experiments, our procedure exhibits high power against sparse alternatives and low power against dense deviations from the null. Moreover, we apply our test to various datasets in macroeconomics and finance and often reject the null. This suggests the presence of sparsity — on top of a dense component — in commonly studied economic applications. The R package 'FAS' implements our approach.
                         </div>
                         <br><br>
                         <span class="font-size16">
